@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* Base */
+@layer base {
+    html, body {
+        @apply font-lexend font-normal text-[15px] scroll-smooth;
+    }
+}
+/* End Base */
