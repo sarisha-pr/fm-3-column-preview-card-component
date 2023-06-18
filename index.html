@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <link href="./assets/css/dist/style.css" rel="stylesheet">
   
   <title>Frontend Mentor | 3-column preview card component</title>
 
@@ -19,21 +21,49 @@
   </style>
 </head>
 <body>
-  Sedans
-  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-  or on your next road trip.
+  <main class="flex flex-col justify-center items-center py-20 min-h-screen">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-3 rounded-lg overflow-hidden">
+        <div class="p-12 bg-orange">
+          <img src="./assets/images/icon-sedans.svg" alt="Icon" class="mb-[35px]">
 
-  SUVs
-  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-  and off-road adventures.
+          <h2 class="pb-[25px] font-shoulders font-bold text-[40px] uppercase text-light-gray">Sedans</h2>
 
-  Luxury
-  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-  rental and arrive in style.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <p class="text-light-gray">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+
+          <div class="pt-[25px] md:pt-[83px]">
+            <a href="#" class="flex justify-center items-center w-[146px] h-[48px] rounded-full border-2 border-transparent duration-200 text-orange bg-light-gray hover:border-light-gray hover:bg-transparent hover:text-light-gray"><span>Learn More</span></a>
+          </div>
+        </div>
+        <div class="p-12 bg-cyan">
+          <img src="./assets/images/icon-suvs.svg" alt="Icon" class="mb-[35px]">
+
+          <h2 class="pb-[25px] font-shoulders font-bold text-[40px] uppercase text-light-gray">SUVs</h2>
+
+          <p class="text-light-gray">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+
+          <div class="pt-[25px] md:pt-[83px]">
+            <a href="#" class="flex justify-center items-center w-[146px] h-[48px] rounded-full border-2 border-transparent duration-200 text-cyan bg-light-gray hover:border-light-gray hover:bg-transparent hover:text-light-gray"><span>Learn More</span></a>
+          </div>
+        </div>
+        <div class="p-12 bg-dark-cyan">
+          <img src="./assets/images/icon-luxury.svg" alt="Icon" class="mb-[35px]">
+
+          <h2 class="pb-[25px] font-shoulders font-bold text-[40px] uppercase text-light-gray">Luxury</h2>
+
+          <p class="text-light-gray">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style. </p>
+
+          <div class="pt-[25px] md:pt-[83px]">
+            <a href="#" class="flex justify-center items-center w-[146px] h-[48px] rounded-full border-2 border-transparent duration-200 text-dark-cyan bg-light-gray hover:border-light-gray hover:bg-transparent hover:text-light-gray"><span>Learn More</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution mt-auto pt-4">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      <h1>Coded by <a href="https://www.frontendmentor.io/profile/sarisha-pr" target="_blank">Sarisha</a>.</h1>
+    </div>
+  </main>
 </body>
 </html>

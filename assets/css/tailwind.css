@@ -7,7 +7,7 @@
 /* Base */
 @layer base {
     html, body {
-        @apply font-lexend font-normal text-[15px] scroll-smooth;
+        @apply font-lexend font-normal text-[15px] scroll-smooth bg-light-gray;
     }
 }
 /* End Base */

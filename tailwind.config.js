@@ -9,12 +9,12 @@ module.exports = {
       sm:'576px',
       md:'768px',
       lg:'992px',
-      xl:'1200px',
     },
 
     colors: {
       'black': '#000000',
       'white': '#FFFFFF',
+      'transparent': 'transparent',
       'orange': 'hsl(31, 77%, 52%)',
       'cyan': 'hsl(184, 100%, 22%)',
       'dark-cyan': 'hsl(179, 100%, 13%)',
@@ -56,8 +56,8 @@ module.exports = {
          */
         '.container': {
           width: '100%',
-          paddingLeft: '15px',
-          paddingRight: '15px',
+          paddingLeft: '24px',
+          paddingRight: '24px',
           marginLeft: 'auto',
           marginRight: 'auto',
 
@@ -70,10 +70,7 @@ module.exports = {
             maxWidth: '720px',
           },
           '@screen lg': {
-            maxWidth: '960px',
-          },
-          '@screen xl': {
-            maxWidth: '1152px',
+            maxWidth: '920px',
           },
         },
 
